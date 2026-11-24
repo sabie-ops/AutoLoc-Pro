@@ -1,5 +1,6 @@
 package clients;
 
+
 public class Client {
 
 private String nom;
@@ -27,7 +28,7 @@ public Client(Client c){
 }
 
 public int calculerAge(int anneeCourante){
-    retrun anneeCourante - anneeNaissance;
+    return anneeCourante - anneeNaissance;
 }
 
 }
