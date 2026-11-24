@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 package test;
 import clients. Client;
 
@@ -27,4 +26,4 @@ public class TestClient {
 
     }
 }
->>>>>>> 0df778f55b86746c54f35411950011bf8e81db3a
+
