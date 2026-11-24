@@ -9,5 +9,9 @@ public class TestVehicule {
         v0.afficherinfos();
         v0.rouler(500);
 
+        Vehicule v1;
+        v1= new Vehicule();
+        v1.afficherinfos();
+
     }
 }
