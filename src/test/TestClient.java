@@ -13,7 +13,14 @@ public class TestClient {
         Client c3;
         c3 = new Client(c2);
 
-        System.out.println(c2);
+        c1.afficherInfo();
+        System.out.println("\n");
+        c3.afficherInfo();
+
+
+        System.out.println(c2.calculerAge(2026));
+        System.out.println(c3.calculerAge(2026));
+        System.out.println(c1.calculerAge(2026));
 
 
     }
