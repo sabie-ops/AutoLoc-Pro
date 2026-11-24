@@ -59,26 +59,22 @@ public class Client {
 
     public void setNom(String nom) {
         if (nom != null && !nom.isEmpty())
-            System.out.println("le nom est vide");
-        this.nom = nom;
+            this.nom = nom;
     }
 
     public void setPrenom(String prenom) {
         if(prenom != null && !prenom.isEmpty())
-            System.out.println("le prenom est vide");
-        this.prenom = prenom;
+            this.prenom = prenom;
     }
 
     public void setNumeroPermis(String numeroPermis) {
         if(numeroPermis != null && !numeroPermis.isEmpty())
-            System.out.println("le numéro du permis est vide");
-        this.numeroPermis = numeroPermis;
+            this.numeroPermis = numeroPermis;
     }
 
     public void setTelephone(String telephone) {
         if(telephone != null && !telephone.isEmpty())
-            System.out.println("le numéro de telephone est vide");
-        this.telephone = telephone;
+            this.telephone = telephone;
     }
 
     public void setAnneeNaissance(int anneeNaissance) {
