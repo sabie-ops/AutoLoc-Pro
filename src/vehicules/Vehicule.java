@@ -7,6 +7,8 @@ public class Vehicule {
     private int kilometrage;
     private double tarifJournalier;
     private boolean disponible;
+    private static int compteurVehicules = 0;
+    public static final String DEVISE = "EUR";
 
     public Vehicule(){
        this.immatriculation = "N/A";
@@ -15,6 +17,8 @@ public class Vehicule {
        this.kilometrage = 0;
        this.tarifJournalier = 0.0;
        this.disponible= true;
+
+        compteurVehicules++;
     }
 
     public Vehicule(String immatriculation,String marque,String modele,int kilometrage,double tarifJournalier,boolean disponible){
@@ -24,6 +28,7 @@ public class Vehicule {
             this.kilometrage = kilometrage;
             this.tarifJournalier = tarifJournalier;
             this.disponible = disponible;
+        compteurVehicules++;
     }
 
 
@@ -34,14 +39,17 @@ public class Vehicule {
         this.kilometrage = v.kilometrage;
         this.tarifJournalier = v.tarifJournalier;
         this.disponible = v.disponible;
+
+        compteurVehicules++;
     }
 
     public void rouler(int km){
-            km = kilometrage + km;
+            this.kilometrage = kilometrage + km;
+
     }
 
     public void afficherinfos(){
-       System.out.println("Vehicule"+"{"+"nimmatriculation = "+immatriculation+","+" marque = "+marque+","+" modele = "+modele+","+" km = "+kilometrage+","+" tarif = "+tarifJournalier+","+" disponible = "+disponible+"}");
+       System.out.println("Vehicule"+"{"+"immatriculation = "+immatriculation+","+" marque = "+marque+","+" modele = "+modele+","+" km = "+kilometrage+","+" tarif = "+tarifJournalier+","+" disponible = "+disponible+"}");
     }
 
     public String getImmatriculation(){
@@ -90,6 +98,11 @@ public class Vehicule {
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
+
+    public static int getCompteurVehicules(){
+        return compteurVehicules;
+    }
+
 }
 
 
