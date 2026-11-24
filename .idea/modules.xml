@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/AutoLoc-Pro.iml" filepath="$PROJECT_DIR$/.idea/AutoLoc-Pro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/vehicules/vehicules.iml" filepath="$PROJECT_DIR$/src/vehicules/vehicules.iml" />
+    </modules>
+  </component>
+</project>
