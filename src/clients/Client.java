@@ -10,6 +10,7 @@ public class Client {
     private String numeroPermis;
     private String telephone;
     private int anneeNaissance;
+    private static int compteurClients = 0;
 
     public Client() {
         this.nom = "N/A";
@@ -17,6 +18,8 @@ public class Client {
         this.numeroPermis = "N/A";
         this.telephone = "N/A";
         this.anneeNaissance = 2000;
+
+        compteurClients++;
 
     }
 
@@ -26,6 +29,7 @@ public class Client {
         this.numeroPermis = numeroPermis;
         this.telephone = telephone;
         this.anneeNaissance = anneeNaissance;
+        compteurClients++;
     }
 
     public Client(Client c) {
@@ -34,6 +38,7 @@ public class Client {
         this.numeroPermis = c.numeroPermis;
         this.telephone = c.telephone;
         this.anneeNaissance = c.anneeNaissance;
+        compteurClients++;
     }
 
     public int calculerAge(int anneeCourante) {
@@ -86,5 +91,9 @@ public class Client {
         System.out.println("numero permis : "+numeroPermis);
         System.out.println("telephone : "+telephone);
         System.out.println("annee de naissance : "+anneeNaissance);
+    }
+
+    public static int getCompteurClients(){
+        return compteurClients;
     }
 }

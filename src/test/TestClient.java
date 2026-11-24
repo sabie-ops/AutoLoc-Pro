@@ -3,7 +3,7 @@ package test;
 import clients. Client;
 
 public class TestClient {
-    public static void main() {
+    public static void main(String[] args) {
 
         Client c1;
         c1 = new Client("Forger", "Anya", "250975104821", "0734495678", 2000);
@@ -22,6 +22,8 @@ public class TestClient {
         System.out.println(c2.calculerAge(2026));
         System.out.println(c3.calculerAge(2026));
         System.out.println(c1.calculerAge(2026));
+
+        System.out.println("le compteur est : "+Client.getCompteurClients() );
 
 
     }
