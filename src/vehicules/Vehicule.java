@@ -103,6 +103,21 @@ public class Vehicule {
         return compteurVehicules;
     }
 
+    @Override
+    public String toString() {
+        return String.format("[%s] %s %s - %d km - %.2f %s/jour - %s",
+                immatriculation, marque, modele, kilometrage, tarifJournalier, DEVISE,
+                disponible ? "DISPONIBLE" : "INDISPONIBLE");
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Vehicule autre = (Vehicule) obj;
+        return this.immatriculation.equals(autre.immatriculation);
+    }
+
 }
 
 
